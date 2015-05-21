@@ -13,4 +13,4 @@ Each pixel changes color as a function of both its original color and how much t
 If you are interested as to why I chose to create this using Matlab, I will explain:
 I had fully intended on using a standard programming language (Python, Java, etc.) to create this project. However, as I began my research, I realized that manipulating videos and images, and matrix computations in general (as an image is really just a 2d matrix of RGB values), are accomplished simply using Matlab. In the end, Matlab allowed me to create a really cool process using very little, yet straightforward, code. I'm a fan!
 
-Of course, feel free to use this on any video you'd like, and to use, change, or repurpose the code as you wish!
+Feel free to use this on any video you'd like, and to use, change, or repurpose the code as you wish!
