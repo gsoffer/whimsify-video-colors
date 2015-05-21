@@ -11,7 +11,7 @@ imagesFolder = 'frames';
 mkdir(imagesFolder)
 
 % Create a file handler for the input video
-videoName = 'Finding Nemo Part.mp4';
+videoName = 'Finding Nemo.mp4';
 inputVideo = VideoReader(videoName);
 
 % Generate all image frames (jpegs named 00000001.jpg, 00000002.jpg. etc...)
