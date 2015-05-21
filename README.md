@@ -2,6 +2,7 @@
 Process that dynamically alters video colors using Matlab
 
 ![](https://cloud.githubusercontent.com/assets/12240257/7742659/be1b7e3a-ff5f-11e4-829a-f7fd1f01ae42.jpg)
+![](https://cloud.githubusercontent.com/assets/12240257/7742661/c0dc2cc8-ff5f-11e4-9919-057d70964c53.jpg)
 
 This code allows you to create a modified copy of a video clip or movie saved in MP4 format, in which the colors are dynamically altered throughout the clip using a cycle of varying visual effects I concocted, producing a result that could be fun and mesmerizing to re-watch.
 
