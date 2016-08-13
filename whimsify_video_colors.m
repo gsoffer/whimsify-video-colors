@@ -21,13 +21,12 @@ while hasFrame(inputVideo)
    fileName = [sprintf('%08d',ii) '.jpg'];
    fullName = fullfile(imagesFolder, fileName);
    % Modify the images
-   %%%%%%%%%%%%%%%
+   %---------------------------------------------------------------------
    % Store 2d matrices with R, G, and B values (unsigned 8-bit by default)
    redChannel = img(:, :, 1);
    greenChannel = img(:, :, 2);
    blueChannel = img(:, :, 3);
-   % Store as signed 32 bit to allow for negatives and large intermediate
-   % computations
+   % Store as signed 32 bit to allow for negatives and large intermediate computations
    origRed = int32(redChannel);
    origGreen = int32(greenChannel);
    origBlue = int32(blueChannel);
@@ -109,7 +108,7 @@ while hasFrame(inputVideo)
        newBlue = uint8(origBlue);
    end
    img2 = cat(3, newRed, newGreen, newBlue);
-   %%%%%%%%%%%%%%%
+   %---------------------------------------------------------------------
    imwrite(img2,fullName) % Create the actual image files
    ii = ii+1;
 end
@@ -131,11 +130,9 @@ close(outputVideo)
 
 
 
-% Save the audio in your desired format (WAV used here)
-% I don't have the latest version of MATLAB in which
-% the audio and video can be exported to one file.
-% For myself, and those in the same boat, 
-% just combine using your favorite video editor.
+% Save the audio in your desired format (WAV used here):
+% I don't have the latest version of MATLAB in which the audio and video can be exported to one file.
+% For myself, and those in the same boat, just combine using your favorite video editor.
 [y,Fs] = audioread(videoName);
 audiowrite('output_audio.wav', y, Fs);
 
